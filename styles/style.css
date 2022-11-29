@@ -72,6 +72,11 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+input[type="submit"]:hover {
+  background: rgb(242, 53, 53);
+  transition: background 0.3s ease-in-out;
+}
+
 /* footer */
 
 .icons {
