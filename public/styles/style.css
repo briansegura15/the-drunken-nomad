@@ -107,6 +107,19 @@ i:hover {
   color: red;
 }
 
+#success {
+  font-size: 2.6rem;
+  color: red;
+  margin-left: 2.5rem;
+  position: relative;
+  top: 4px;
+}
+
+span {
+  font-size: 1.7rem;
+  color: red;
+}
+
 /* mobile queries */
 
 @media screen and (max-width: 480px) {

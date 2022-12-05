@@ -13,7 +13,7 @@ emailForm.addEventListener("submit", e => {
   xhr.setRequestHeader("content-type", "application/json");
   xhr.onload = function () {
     console.log(xhr.responseText);
-    if (xhr.responseText == "sucess") {
+    if (xhr.responseText === "success") {
       alert("Email sent");
       email.value = "";
     } else {
@@ -23,3 +23,7 @@ emailForm.addEventListener("submit", e => {
 
   xhr.send(JSON.stringify(formData));
 });
+
+// setTimeout(function () {
+//   $("#success").slideUp();
+// }, 3000);
