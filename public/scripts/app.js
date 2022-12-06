@@ -1,5 +1,7 @@
 const emailForm = document.querySelector(".email-form");
 let email = document.getElementById("email");
+const submitBtn = document.getElementById("submit");
+// const div = document.getElementsByClassName("div");
 
 emailForm.addEventListener("submit", e => {
   e.preventDefault();
@@ -24,6 +26,9 @@ emailForm.addEventListener("submit", e => {
   xhr.send(JSON.stringify(formData));
 });
 
-// setTimeout(function () {
-//   $("#success").slideUp();
-// }, 3000);
+// function displayMsg() {
+//   let div = document.getElementById("hidden");
+//   div.style.display = div.style.display == "none" ? "block" : "none";
+// }
+
+// submitBtn.addEventListener("click", displayMsg);

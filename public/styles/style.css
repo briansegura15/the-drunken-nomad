@@ -29,11 +29,16 @@ header h1 {
   margin-bottom: 1rem;
 }
 
-.content p {
+p {
   color: rgb(242, 239, 239);
   font-size: 2.3rem;
   width: 65ch;
   margin-bottom: 2rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  padding-top: 3rem;
 }
 
 /* email element */

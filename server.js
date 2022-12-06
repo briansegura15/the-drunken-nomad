@@ -46,7 +46,7 @@ app.post("/", (req, res) => {
       console.log(error);
       res.send("error");
     } else {
-      console.log("Email sent: " + info.response);
+      console.log("Email sent to our Outlook: " + info.response);
       res.send("success");
     }
   });
