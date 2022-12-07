@@ -1,0 +1,179 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../Photos/barphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* content */
+
+.content {
+  margin-right: 1rem;
+}
+
+header h1 {
+  color: white;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: rgb(242, 239, 239);
+  font-size: 2.3rem;
+  width: 65ch;
+  margin-bottom: 2rem;
+}
+
+.subtext {
+  font-size: 1.5rem;
+  padding-top: 3rem;
+}
+
+/* email element */
+
+#email {
+  border: solid 0.2rem rgba(255, 255, 255, 0.35);
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  width: 25rem;
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  appearance: none;
+  transform: scale(1);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  background-color: transparent;
+  color: white;
+}
+
+#email:focus {
+  outline: none !important;
+  border: 0.2rem solid red;
+  animation: focus 0.1s;
+  background-color: rgba(255, 255, 255, 0.225);
+}
+
+/* submit button */
+
+input[type="submit"] {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  width: 8rem;
+  font-size: 1.5rem;
+  background: red;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: rgb(242, 53, 53);
+  transition: background 0.3s ease-in-out;
+}
+
+/* footer */
+
+.icons {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 5rem 0;
+}
+
+li i {
+  font-size: 2rem;
+  color: #fff;
+  margin: 2rem 0.5rem;
+}
+
+footer {
+  transition: opacity 0.5s ease-in-out;
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+i:hover {
+  color: red;
+}
+
+#success {
+  font-size: 2.6rem;
+  color: red;
+  margin-left: 2.5rem;
+  position: relative;
+  top: 4px;
+}
+
+span {
+  font-size: 1.7rem;
+  color: red;
+}
+
+/* mobile queries */
+
+@media screen and (max-width: 480px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .content {
+    font-size: 1.3rem;
+    padding-right: 4rem;
+  }
+
+  .content p {
+    width: 20ch;
+    font-size: 3rem;
+    color: rgb(212, 211, 211);
+  }
+
+  header h1 {
+    font-size: 5rem;
+    width: 12ch;
+  }
+
+  /* email element */
+
+  #email {
+    font-size: 2.1rem;
+    width: 29rem;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 29rem;
+    font-size: 2.1rem;
+    margin-top: 2rem;
+  }
+
+  input::placeholder {
+    color: rgb(212, 211, 211);
+  }
+
+  /* footer */
+
+  .icons {
+    font-size: 4rem;
+  }
+
+  li i {
+    font-size: 3rem;
+  }
+}
