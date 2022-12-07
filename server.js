@@ -20,7 +20,8 @@ app.post("/", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "Outlook365",
     host: process.env.EMAIL_SERVICE,
-    port: 587,
+    port: 465,
+    secure: false,
     auth: {
       user: process.env.EMAIL_USERNAME,
       pass: process.env.EMAIL_PASSWORD,
