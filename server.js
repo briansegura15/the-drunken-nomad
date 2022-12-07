@@ -11,7 +11,7 @@ app.use(express.json());
 dotenv.config();
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.post("/", (req, res) => {
